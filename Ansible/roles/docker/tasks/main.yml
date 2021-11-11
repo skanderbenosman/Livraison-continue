@@ -2,7 +2,7 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: mypipeline
+    name: livraisoncontinue
     build:
      path: /var/lib/jenkins/workspace/livraisonContinue
      pull: no
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: myapp_container
-    image: livraisonContinue:latest
+    image: livraisoncontinue:latest
     state: started
     recreate: true
     ports:
