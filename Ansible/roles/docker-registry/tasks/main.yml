@@ -16,6 +16,6 @@
 - name: Tag and push to docker hub
   community.docker.docker_image:
      name: livraisoncontinue:latest
-     repository: devops/livraisoncontinue:1.2
+     repository: skander123/devops:1.2
      push: yes
      source: local
